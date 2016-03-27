@@ -16,9 +16,9 @@ clone to:
 C:\Program Files\TeamSpeak 3 Client\styles
 
 
-#TODO -
+#TODO
 
 remove the pantone grey text background on some elements.
 
 
-Use this theme with a mono icon set.
+## Use this theme with a mono icon set.
