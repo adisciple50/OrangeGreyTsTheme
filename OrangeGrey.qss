@@ -1,0 +1,155 @@
+/*
+ * TeamSpeak 3 Default Qt StyleSheet
+ *
+ * Copyright (c) 2009-2015 TeamSpeak Systems GmbH
+ */
+
+/* Use this to change the application default font. By default we leave it up to Qt to decide which font to pick. */
+QWidget {
+	font-family: "GillSans","Segoe UI";
+	font-size: 10pt;
+}
+
+/*Main Background*/ 
+QMainWindow, QDialog, QAbstractItemView, QWidget {
+ 	background-color: #777772 ;
+	color:  white ;
+}
+
+
+/* Layout */
+
+QTextEdit#ChatLineEdit[helpTextVisible="true"]  {
+	color: white;
+}
+
+QTextEdit#ChatLineEdit[helpTextVisible="false"] {
+ color: normal;
+}
+
+QStatusBar QLabel {
+  padding: 0px 3px;
+  border: 0px;
+}
+
+QTextEdit#InfoFrame {
+	background-color: #ff6c2f;
+	color: white;	
+}
+
+QTextEdit#ChatTab {
+     background-color: #ff6c2f;
+	
+}
+
+QTreeView#ServerTreeView {
+	background-color: #ff6c2f;
+	alternate-background-color:  #ff6c2f;
+	qproperty-rootIsDecorated: false;
+}
+
+QListWidget#localIconsListWidget::item:selected, QListWidget#remoteIconsListWidget::item:selected {
+	border: 1px solid #ff6c2f;
+}
+
+QLabel#OptionsHeadlineTitleLabel {
+	color: #ff6c2f;
+	font-weight: bold;
+}
+
+QLabel#OptionsHeadlineDescriptionLabel {
+	color: white;
+}
+
+QToolButton#newBookmarkButton, QToolButton#newBookmarkFolderButton, QToolButton#removeBookmarkButton {
+	color: white;
+}
+
+QToolButton#newBookmarkButton:hover, QToolButton#newBookmarkFolderButton:hover, QToolButton#removeBookmarkButton:hover {
+	color: #ff6c2f;
+}
+
+QLabel#NewsLeftLabel {
+	padding-right: 6px;
+}
+
+QTableView#clientsTableView, QTableView#banTableView {
+	qproperty-alternatingRowColors: true;
+}
+
+QLabel#appNameLabel {
+	color: #455573;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+QWidget#HeadlineLabel {
+	background-color: #ff6c2f;
+}
+
+
+/*Tree Text Colour*/
+QTreeView::item {
+	border: 1px solid transparent;
+	border-radius: none;
+	color: #fff;
+
+}
+/*Tree text Hover*/
+QTreeView::item:hover {
+	color: #325567;	
+}
+/*Tree Select Item*/
+QTreeView::item:selected:active{
+	background-color: #325567;
+	color: #FFFFFF;
+}
+QTreeView::item:selected:!active{
+	background-color: #325567;
+	color: #fff;
+}
+
+
+/* TabBar */
+QTabBar {
+	background-color: #777772;
+	margin-bottom: 4px;
+	margin-top: 4px;
+	padding-top: 3px;
+	padding-left: 3px;
+}
+QTabBar::tab {
+	background-color: #777772;
+	
+	color: white;
+	min-width: 8ex;
+	padding: 3px;
+	padding-top: 3px;
+	padding-left: 6px;
+	padding-bottom: 3px;
+	padding-right: 6px;
+}
+
+QTabBar::tab:hover {
+	background-color: #777772;
+	color: #ff6c2f;
+}
+QTabBar::tab:selected {
+    background-color: #777772;
+	color: white;
+	
+}
+
+QTabBar::tab:selected:top {
+
+	margin-top: 3px;
+}
+
+QTabBar::tab:!selected:top {
+
+	margin-top: 0px;
+}
+QTabBar::tab:!selected:bottom {
+
+	margin-bottom: 0px;
+}
