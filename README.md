@@ -22,3 +22,5 @@ remove the pantone grey text background on some elements.
 
 
 ## Use this theme with a mono icon set.
+
+## Use the "Fusion" style
